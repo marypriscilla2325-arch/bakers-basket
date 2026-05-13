@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Bakers Basket</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">🍰 Bakers Basket</h1>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+        <li><a href="#" id="auth-btn">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="shop">
+    <div class="shop-container">
+      <aside class="filters">
+        <h3>Filter</h3>
+        <div class="filter-group">
+          <label><input type="checkbox" value="Cakes"> Cakes</label>
+          <label><input type="checkbox" value="Bread"> Bread</label>
+          <label><input type="checkbox" value="Pastries"> Pastries</label>
+        </div>
+        <input type="text" id="search-input" placeholder="Search products..." class="search-box">
+      </aside>
+
+      <main class="products-section">
+        <h2>All Products</h2>
+        <div class="products-grid" id="products-grid"></div>
+      </main>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Bakers Basket. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
